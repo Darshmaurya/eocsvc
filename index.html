@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>EOC | Home</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+
+  <!-- ARIA announcer for a11y -->
+  <div id="a11y-announcer" class="sr-only" aria-live="polite" aria-atomic="true"></div>
+
+  <!-- Accessibility toolbar -->
+  <div class="accessibility-bar" role="toolbar" aria-label="Accessibility options">
+    <label for="languageSelect" class="sr-only">Language</label>
+    <select id="languageSelect" aria-label="Select language">
+      <option value="en">English</option>
+      <option value="hi">हिन्दी</option>
+    </select>
+    <button onclick="zoomIn()" aria-label="Zoom in" class="smallbtn">A+</button>
+    <button onclick="zoomOut()" aria-label="Zoom out" class="smallbtn">A-</button>
+    <button onclick="toggleContrast()" aria-pressed="false" aria-label="Toggle high contrast">Contrast</button>
+    <button onclick="toggleGrayscale()" aria-pressed="false" aria-label="Toggle grayscale">Grayscale</button>
+  </div>
+
+  <!-- Header -->
+  <header class="header" role="banner">
+    <div class="header-inner">
+      <div class="brand">
+        <img src="https://i.ibb.co/jPVTYLn8/20250828-220840.png" alt="EOC logo">
+        <div class="site-title">
+          <h1>Equal Opportunity Cell</h1>
+          <p>Sri Venkateswara College — University of Delhi</p>
+        </div>
+      </div>
+
+      <nav class="nav" role="navigation" aria-label="Main navigation">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="teams.html">Teams</a>
+        <a href="events.html">Events</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" role="region" aria-label="Welcome">
+    <div class="hero-inner">
+      <h1>Equal Opportunity Cell (EOC)</h1>
+      <p>Creating equality, accessibility & inclusive opportunities for differently-abled students at Sri Venkateswara College.</p>
+      <div style="margin-top:18px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap">
+        <img src="https://i.ibb.co/jPVTYLn8/20250828-220840.png" alt="EOC logo" style="height:64px">
+        <img src="https://i.ibb.co/Qv7gST3d/1756717867176.png" alt="Sri Venkateswara College logo" style="height:64px">
+        <img src="https://i.ibb.co/zHtdvyLn/1756811272253.png" alt="University of Delhi logo" style="height:64px">
+      </div>
+    </div>
+  </section>
+
+  <!-- Convener -->
+  <section class="convener" role="region" aria-label="Convener">
+    <img src="https://i.ibb.co/v0R5sM9/IMG-20250902-164531.jpg" alt="Dr. Lakshmi Reddy - Convener">
+    <div class="convener-info">
+      <h2>Dr. Lakshmi Reddy</h2>
+      <p>Convener, Equal Opportunity Cell</p>
+    </div>
+  </section>
+
+  <!-- Core Team -->
+  <div class="section-title"><h2>Core Team</h2></div>
+  <section class="team-grid" role="region" aria-label="Core team members">
+    <!-- each card -->
+    <article class="card" tabindex="0" aria-labelledby="a1">
+      <img src="https://i.ibb.co/gZRJzKNN/IMG-20250906-201351.jpg" alt="Anirudh Giri">
+      <h3 id="a1">Anirudh Giri</h3>
+      <div class="role">President — B.A Prog. 3rd Year</div>
+      <div class="tag">I'm Anirudh Giri... creating an inclusive environment and celebrating diversity.</div>
+    </article>
+
+    <article class="card" tabindex="0" aria-labelledby="a2">
+      <img src="https://i.ibb.co/ds9F3n15/IMG-20250906-195509.jpg" alt="Ishita Arya">
+      <h3 id="a2">Ishita Arya</h3>
+      <div class="role">Vice President — B.A Prog. 3rd Year</div>
+      <div class="tag">Dedicated to upholding values of inclusion, equity, and empowerment.</div>
+    </article>
+
+    <article class="card" tabindex="0" aria-labelledby="a3">
+      <img src="https://i.ibb.co/S4VdFGPx/IMG-20250906-WA0000.jpg" alt="Vayu Puri">
+      <h3 id="a3">Vayu Puri</h3>
+      <div class="role">General Secretary — B.A Prog. 3rd Year</div>
+      <div class="tag">Ensures smooth coordination, effective communication and initiative execution.</div>
+    </article>
+
+    <article class="card" tabindex="0" aria-labelledby="a4">
+      <img src="https://i.ibb.co/dwvq0FMJ/IMG-20250906-195654.jpg" alt="Jitendra Sinha">
+      <h3 id="a4">Jitendra Sinha</h3>
+      <div class="role">General Secretary — B.Sc Electronics Hons</div>
+      <div class="tag">Detail oriented, supportive, committed to service and results.</div>
+    </article>
+
+    <article class="card" tabindex="0" aria-labelledby="a5">
+      <img src="https://i.ibb.co/QFLNcjfF/IMG-20250906-201937.jpg" alt="Darsh Maurya">
+      <h3 id="a5">Darsh Maurya</h3>
+      <div class="role">Joint Secretary — B.A (Hons.) History</div>
+      <div class="tag">Promotes inclusivity and accessibility across campus for PwD students.</div>
+    </article>
+
+    <article class="card" tabindex="0" aria-labelledby="a6">
+      <img src="https://i.ibb.co/p6Kzmbc9/IMG-20250906-215542.jpg" alt="Vishal">
+      <h3 id="a6">Vishal</h3>
+      <div class="role">Joint Secretary — B.A (Hons.) History</div>
+      <div class="tag">Committed to fostering equal opportunities for all.</div>
+    </article>
+
+    <article class="card" tabindex="0" aria-labelledby="a7">
+      <img src="https://i.ibb.co/JFKtsBPN/IMG-20250906-214738.jpg" alt="Srishti">
+      <h3 id="a7">Srishti</h3>
+      <div class="role">Executive — B.A (Hons.) History</div>
+      <div class="tag">Supports teams & coordinates core operations with sincerity and approachability.</div>
+    </article>
+
+    <article class="card" tabindex="0" aria-labelledby="a8">
+      <img src="https://i.ibb.co/HDM2d75Q/IMG-20250906-214820.jpg" alt="Sagi Lahari">
+      <h3 id="a8">Sagi Lahari</h3>
+      <div class="role">Executive — B.A Prog. 3rd Year</div>
+      <div class="tag">Coordinates efforts between teams to achieve impact and inclusion.</div>
+    </article>
+  </section>
+
+  <!-- Vision -->
+  <section class="vision" role="region" aria-label="Vision">
+    <h3>Our Vision</h3>
+    At the Equal Opportunity Cell (EOC), Sri Venkateswara College, we envision a campus where equality, accessibility, and inclusivity are the foundation of student life. Our vision is to empower differently-abled students by creating opportunities that nurture their academic, personal, and social growth, while also fostering empathy and responsibility among our volunteers. We aim to nurture a campus where diversity iscelebrated, barriers are broken, and every student can access opportunities and realize their potential.
+    <ul>
+      <li>Provide academic assistance and study aid to support learning.</li>
+      <li>Arrange scribes for examinations, ensuring equal opportunities.</li>
+      <li>Organize inclusive events, sports, and activities that celebrate diversity.</li>
+      <li>Conduct interactive sessions and skill-enhancement workshops for the holistic development of both PwD students and volunteers.</li>
+      <li>Improve mobility and accessibility within the college, offering proper guidance and infrastructural support to PwD students. Through these efforts, we aim to bridge the gap between differently-abled students and mainstream society, ensuring that every student can learn, participate, and thrive with dignity.</li>
+    </ul>
+  </section>
+
+<!-- Footer -->
+<footer class="footer" role="contentinfo">
+  <div class="inner">
+    <div class="footer-sections">
+      <div class="footer-about">
+        <h3>Equal Opportunity Cell</h3>
+        <p>Sri Venkateswara College, University of Delhi</p>
+        <p>Working towards equality, accessibility and empowerment for PwD students.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="https://www.svc.ac.in/" target="_blank">College Website</a></li>
+          <li><a href="https://swavlambancard.gov.in/" target="_blank">Apply for UDID</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-social">
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/svc.eoc?igsh=Nzc2bmRycHlkZzA0" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://youtube.com/@equalopportunitycellsrivenkate" target="_blank"><i class="fab fa-youtube"></i></a>
+          <a href="https://www.facebook.com/share/1Ab4x3cr9W/" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.linkedin.com/company/eocsvc/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2025 <strong>EOC-SVC</strong> | Developed by <strong>Darsh Maurya</strong>
+    </div>
+  </div>
+</footer>

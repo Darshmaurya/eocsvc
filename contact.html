@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>EOC | Contact Us — Equal Opportunity Cell, SVC</title>
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <style>
+    :root {
+      --yellow:#FFD700;
+      --dark:#222;
+      --muted:#555;
+      --bg:#fafafa;
+      --card:#fff;
+      --maxw:1200px;
+      --radius:12px;
+      --shadow:0 8px 24px rgba(0,0,0,0.08);
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,system-ui,Arial,sans-serif;background:var(--bg);color:var(--dark);}
+    img{max-width:100%;display:block}
+    a{text-decoration:none;color:inherit}
+
+    /* Header */
+    .header{background:#fff;padding:14px 18px;border-bottom:1px solid #eee;position:sticky;top:0;z-index:1200}
+    .header .inner{max-width:var(--maxw);margin:0 auto;display:flex;align-items:center;justify-content:space-between}
+    .brand{display:flex;align-items:center;gap:12px}
+    .brand img{height:56px;width:auto;border-radius:8px}
+    .brand .titles h1{margin:0;font-size:1.05rem;color:var(--dark)}
+    .brand .titles p{margin:0;font-size:.82rem;color:var(--muted)}
+    nav.nav{display:flex;gap:10px}
+    nav.nav a{padding:8px 12px;border-radius:8px;font-weight:600;color:var(--dark)}
+    nav.nav a:hover, nav.nav a:focus{background:var(--yellow);color:#000;outline:none}
+    nav.nav a.active{background:var(--dark);color:var(--yellow)}
+
+    /* Hero */
+    .hero{max-width:var(--maxw);margin:26px auto;padding:20px;text-align:center}
+    .hero h2{margin:0;font-size:1.8rem;color:var(--dark)}
+    .hero p{margin:8px 0 0;color:var(--muted)}
+
+    /* Contact section */
+    .contact-section{max-width:var(--maxw);margin:20px auto;padding:20px;display:grid;grid-template-columns:1fr 1fr;gap:24px}
+    .contact-info,.contact-form{background:var(--card);padding:24px;border-radius:var(--radius);box-shadow:var(--shadow)}
+    .contact-info h3,.contact-form h3{margin-top:0;color:var(--yellow)}
+    .info-item{margin-bottom:12px;font-size:.95rem;color:var(--dark)}
+    .info-item i{color:var(--yellow);margin-right:8px}
+
+    /* Form */
+    form{display:flex;flex-direction:column;gap:14px}
+    input,textarea{padding:12px;border:1px solid #ddd;border-radius:8px;font-size:1rem;width:100%}
+    textarea{min-height:120px;resize:vertical}
+    button{padding:12px;background:var(--yellow);border:none;border-radius:8px;font-weight:700;font-size:1rem;cursor:pointer;transition:.3s}
+    button:hover{background:#f5c400}
+
+/* ===== Footer ===== */
+.footer {
+  background: #000;
+  color: #fff;
+  padding: 40px 20px;
+  margin-top: 50px;
+  font-family: Arial, sans-serif;
+}
+
+.footer .inner {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-sections {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.footer-about,
+.footer-links,
+.footer-social {
+  flex: 1 1 250px;
+}
+
+.footer h3,
+.footer h4 {
+  color: #f9d423; /* yellow accent */
+  margin-bottom: 15px;
+}
+
+.footer p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin: 8px 0;
+}
+
+.footer-links ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links ul li a:hover {
+  color: #f9d423;
+}
+
+.footer-social .social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.footer-social a {
+  color: #fff;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+.footer-social a:hover {
+  color: #f9d423;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #333;
+  padding-top: 15px;
+  margin-top: 30px;
+  font-size: 14px;
+  color: #aaa;
+}
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="inner">
+      <div class="brand">
+        <img src="https://i.ibb.co/jPVTYLn8/20250828-220840.png" alt="EOC Logo">
+        <div class="titles">
+          <h1>Equal Opportunity Cell</h1>
+          <p>Sri Venkateswara College — University of Delhi</p>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="teams.html">Teams</a>
+        <a href="events.html">Events</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h2>Contact Us</h2>
+    <p>We’d love to hear from you! Reach out to us via email, phone, or the form below.</p>
+  </section>
+
+  <!-- Contact section -->
+  <section class="contact-section">
+    <div class="contact-info">
+      <h3>Get in Touch</h3>
+      <div class="info-item"><i class="fas fa-envelope"></i> eocsvc.du@gmail.com</div>
+      <div class="info-item"><i class="fas fa-phone"></i> +91 6284613389</div>
+      <div class="info-item"><i class="fas fa-map-marker-alt"></i> Sri Venkateswara College, University of Delhi, India</div>
+    </div>
+
+    <div class="contact-form">
+      <h3>Send us a Message</h3>
+      <form action="https://formspree.io/f/mwpnayen" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required aria-label="Your Name">
+        <input type="email" name="email" placeholder="Your Email" required aria-label="Your Email">
+        <textarea name="message" placeholder="Your Message" required aria-label="Your Message"></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+<!-- Footer -->
+<footer class="footer" role="contentinfo">
+  <div class="inner">
+    <div class="footer-sections">
+      <div class="footer-about">
+        <h3>Equal Opportunity Cell</h3>
+        <p>Sri Venkateswara College, University of Delhi</p>
+        <p>Working towards equality, accessibility and empowerment for PwD students.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="https://www.svc.ac.in/" target="_blank">College Website</a></li>
+          <li><a href="https://swavlambancard.gov.in/" target="_blank">Apply for UDID</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-social">
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/svc.eoc?igsh=Nzc2bmRycHlkZzA0" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://youtube.com/@equalopportunitycellsrivenkate" target="_blank"><i class="fab fa-youtube"></i></a>
+          <a href="https://www.facebook.com/share/1Ab4x3cr9W/" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.linkedin.com/company/eocsvc/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2025 <strong>EOC-SVC</strong> | Developed by <strong>Darsh Maurya</strong>
+    </div>
+  </div>
+</footer>
